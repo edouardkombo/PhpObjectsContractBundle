@@ -13,7 +13,7 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
 use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\StoringInterfaces;
 

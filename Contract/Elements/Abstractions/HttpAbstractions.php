@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  Communication
+ * @category  Http
  * @package   Abstractions
  * @author    Edouard Kombo <edouard.kombo@gmail.com>
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
@@ -15,42 +15,66 @@
  */
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
-use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\CommunicationInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\HttpInterfaces;
 
 /**
- * Abstraction of CommunicationInterfaces
+ * Abstraction of HttpInterfaces
  *
- * @category Communication
+ * @category Http
  * @package  Abstractions
  * @author   Edouard Kombo <edouard.kombo@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-abstract class CommunicationAbstractions implements CommunicationInterfaces
+abstract class HttpAbstractions implements HttpInterfaces
 {
     
     /**
-     *
-     * @var mixed
-     */
-    protected $datas;
-    
-    /**
-     * Send something
+     * Send something via $_GET method
      * 
      * @return mixed
      */
-    public function send()
+    public function get()
     {
         
     }
     
     /**
-     * Receive something
+     * Send something via $_POST method
      * 
      * @return mixed
      */
-    public function receive()
+    public function post()
+    {
+        
+    }
+    
+    /**
+     * Send something via $_PUT method
+     * 
+     * @return mixed
+     */
+    public function put()
+    {
+        
+    }
+    
+    /**
+     * Send something via $_HEAD method
+     * 
+     * @return mixed
+     */
+    public function head()
+    {
+        
+    }
+    
+    /**
+     * Send something via $_DELETE method
+     * 
+     * @return mixed
+     */
+    public function delete()
     {
         
     }
