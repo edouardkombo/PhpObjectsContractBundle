@@ -13,9 +13,9 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
 
-use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\OpenCloseInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\OpenCloseInterfaces;
 
 /**
  * Abstraction of OpenCloseInterfaces

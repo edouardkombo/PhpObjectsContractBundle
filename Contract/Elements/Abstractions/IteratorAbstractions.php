@@ -13,7 +13,7 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
 /**
  * IteratorAbstractions class is a family of methods to set and get something. 
@@ -24,7 +24,7 @@ namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-abstract class IteratorAbstraction implements \Iterator
+abstract class IteratorAbstractions implements \Iterator
 {
     /**
      *

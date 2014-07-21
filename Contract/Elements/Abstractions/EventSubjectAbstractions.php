@@ -13,7 +13,7 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
 /**
  * EventSubjectAbstraction class is a part of the observer design pattern.
@@ -24,7 +24,7 @@ namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-abstract class EventSubjectAbstraction implements \SplSubject
+abstract class EventSubjectAbstractions implements \SplSubject
 {
     
     /**

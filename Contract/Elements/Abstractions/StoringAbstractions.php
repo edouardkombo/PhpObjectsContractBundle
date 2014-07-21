@@ -13,9 +13,9 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
 
-use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\StoringInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\StoringInterfaces;
 
 /**
  * Abstraction of StoringInterfaces

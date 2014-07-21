@@ -13,9 +13,9 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
-use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\NumbersInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\NumbersInterfaces;
 
 /**
  * Abstraction of NumbersInterfaces

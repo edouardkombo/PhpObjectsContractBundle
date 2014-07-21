@@ -13,7 +13,7 @@
  * @link      http://creativcoders.wordpress.com
  * @since     1.0.0
  */
-namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
+namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
 /**
  * EventObserverAbstractions class is part of the observer design pattern.
@@ -28,9 +28,9 @@ abstract class EventObserverAbstractions implements \SplObserver
 {
     /**
      *
-     * @var array $_states 
+     * @var array $states 
      */
-    private $_states = array();
+    private $states = array();
 
     /**
      * Get the state
@@ -39,7 +39,7 @@ abstract class EventObserverAbstractions implements \SplObserver
      */
     public function getStates()
     {
-        return (array) $this->_states;
+        return (array) $this->states;
     }
 
     /**
@@ -52,7 +52,7 @@ abstract class EventObserverAbstractions implements \SplObserver
      */
     public function addState($state, $stateValue = 1)
     {
-        $this->_states[$state] = $stateValue;
+        $this->states[$state] = $stateValue;
         
         return (object) $this;
     }
@@ -67,10 +67,13 @@ abstract class EventObserverAbstractions implements \SplObserver
     public function removeState($state)
     {
         if ($this->hasState($state)) {
-            unset($this->_states[$state]);
-            return (boolean) true;   
-        }        
-        return (boolean) false;
+            unset($this->states[$state]);
+            $result = true;   
+        }
+        
+        $result = false;
+        
+        return (boolean) $result;
     }
 
     /**
@@ -82,7 +85,7 @@ abstract class EventObserverAbstractions implements \SplObserver
      */
     public function hasState($state)
     {
-        return (boolean) isset($this->_states[$state]);        
+        return (boolean) isset($this->states[$state]);        
     }			
     
     /**

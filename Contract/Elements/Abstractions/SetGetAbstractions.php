@@ -5,10 +5,9 @@
  *
  * PHP version 5
  *
- * @category  OpenClose
- * @package   Interfaces
+ * @category  SetGet
+ * @package   Abstractions
  * @author    Edouard Kombo <edouard.kombo@gmail.com>
- * @copyright 2013-2014 Edouard Kombo
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  * @version   GIT: 1.0.0
  * @link      http://creativcoders.wordpress.com
@@ -16,28 +15,42 @@
  */
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
 
+use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\SetGetInterfaces;
+
 /**
- * Some final actions for open close
+ * Abstraction of SetGetInterfaces
  *
- * @category OpenClose
- * @package  Interfaces
+ * @category SetGet
+ * @package  Abstractions
  * @author   Edouard Kombo <edouard.kombo@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-interface OpenCloseInterfaces
+abstract class SetGetAbstractions implements SetGetInterfaces
 {
     /**
-     * Open something
-     * 
-     * @return mixed $this
+     *
+     * @var mixed
      */
-    public function open();
-
+    protected $data;
+    
     /**
-     * Close something
+     * Read something
      *
      * @return mixed
      */
-    public function close();   
+    public function set()
+    {
+        
+    }
+    
+    /**
+     * Write something
+     *
+     * @return mixed
+     */
+    public function get()
+    {
+        
+    }
 }

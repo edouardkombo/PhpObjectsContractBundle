@@ -15,7 +15,7 @@
  */
 namespace EdouardKombo\PhpObjectsContract\Contract\Elements\Abstractions;
 
-use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\SecurityInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\SecurityInterfaces;
 
 /**
  * Abstraction of SecurityInterfaces
