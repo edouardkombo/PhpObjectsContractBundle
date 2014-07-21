@@ -3,7 +3,7 @@
     "type": "bundle",
     "description": "Fundamental interfaces and its abstractions to build php objects according to SOLID and CABIN principles.",
     "keywords": ["Php Objects Contract Bundle","Cabin principle","POC Bundle"],
-    "homepage": "https://github.com/edouardkombo/PhpObjectContractBundle",
+    "homepage": "https://github.com/edouardkombo/PhpObjectsContractBundle",
     "license": "MIT",
     "authors": [
         {
