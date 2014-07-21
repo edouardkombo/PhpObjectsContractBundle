@@ -28,29 +28,32 @@ use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\SetGetInterface
  */
 abstract class SetGetAbstractions implements SetGetInterfaces
 {
-    /**
-     *
-     * @var mixed
-     */
-    protected $data;
     
     /**
-     * Read something
+     *
+     * @var string
+     */
+    public $cursor;
+    
+    /**
+     * Set a value
      *
      * @return mixed
      */
-    public function set()
+    public function set($value)
     {
+        $this->{$this->cursor} = $value;
         
+        return $this;        
     }
     
     /**
-     * Write something
+     * Get a value
      *
      * @return mixed
      */
     public function get()
     {
-        
+        return $this->{$this->cursor};         
     }
 }

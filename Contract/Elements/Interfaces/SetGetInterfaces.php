@@ -26,15 +26,16 @@ namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
  */
 interface SetGetInterfaces
 {
-    /**
-     * Set something
-     * 
-     * @return mixed
-     */
-    public function set();
     
     /**
-     * Get something
+     * Set a value
+     * 
+     * @param mixed $value
+     */
+    public function set($value);
+    
+    /**
+     * Get a value
      * 
      * @return mixed
      */
