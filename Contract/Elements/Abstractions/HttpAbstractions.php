@@ -18,7 +18,7 @@ namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\HttpInterfaces;
 
 /**
- * Abstraction of HttpInterfaces
+ * Abstraction of HttpInterfaces :)
  *
  * @category Http
  * @package  Abstractions
