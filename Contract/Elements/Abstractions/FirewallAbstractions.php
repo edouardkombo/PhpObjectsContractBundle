@@ -30,12 +30,23 @@ abstract class FirewallAbstractions implements FirewallInterfaces
 {
     
     /**
-     * Handle exception or error
+     * Check if property exists in class
      * 
-     * @return mixed
+     * @param string $property Class property
+     * @param Object $class    Class object
+     * 
+     * @return boolean
+     * @throws ErrorException
      */
-    public function handle()
+    public function checkIfPropertyExists($property, $class)
     {
+        $message = "ErrorException: Unknown property '$property'. ";
+        $message .= "To list valid properties, open SetGetContract class"; 
+
+        if (!isset($class->{$property})) {
+            throw new \ErrorException($message); 
+        }           
         
+        return true;        
     }
 }

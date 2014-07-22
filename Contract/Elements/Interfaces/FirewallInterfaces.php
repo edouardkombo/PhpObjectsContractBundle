@@ -25,11 +25,15 @@ namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
  * @link     http://creativcoders.wordpress.com
  */
 interface FirewallInterfaces
-{
+{   
     /**
-     * Handle error or exception
+     * Check if property exists in class
      * 
-     * @return mixed
+     * @param string $property Class property
+     * @param Object $class    Class object
+     * 
+     * @return boolean
+     * @throws ErrorException
      */
-    public function handle();    
+    public function checkIfPropertyExists($property, $class);
 }
