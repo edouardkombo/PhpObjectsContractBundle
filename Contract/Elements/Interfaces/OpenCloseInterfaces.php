@@ -12,7 +12,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  * @version   GIT: 1.0.0
  * @link      http://creativcoders.wordpress.com
- * @since     1.0.0
+ * @since     0.0.0
  */
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
 

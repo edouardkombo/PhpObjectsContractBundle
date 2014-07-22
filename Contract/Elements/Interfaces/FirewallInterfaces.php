@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  Communication
+ * @category  Firewall
  * @package   Interface
  * @author    Edouard Kombo <edouard.kombo@gmail.com>
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
@@ -16,27 +16,20 @@
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
 
 /**
- * Some communication final actions
+ * Some creation final actions
  *
- * @category Communication
+ * @category Firewall
  * @package  Interface
  * @author   Edouard Kombo <edouard.kombo@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-interface CommunicationInterfaces
+interface FirewallInterfaces
 {
     /**
-     * Send something
+     * Handle error or exception
      * 
      * @return mixed
      */
-    public function send();
-    
-    /**
-     * Receive something
-     * 
-     * @return mixed
-     */
-    public function receive();
+    public function handle();    
 }

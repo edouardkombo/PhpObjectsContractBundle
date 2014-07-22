@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @category  Communication
+ * @category  Firewall
  * @package   Abstractions
  * @author    Edouard Kombo <edouard.kombo@gmail.com>
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
@@ -15,42 +15,26 @@
  */
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
-use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\CommunicationInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\FirewallInterfaces;
 
 /**
- * Abstraction of CommunicationInterfaces
+ * Abstraction of FirewallInterfaces
  *
- * @category Communication
+ * @category Firewall
  * @package  Abstractions
  * @author   Edouard Kombo <edouard.kombo@gmail.com>
  * @license  http://www.opensource.org/licenses/mit-license.php MIT License
  * @link     http://creativcoders.wordpress.com
  */
-abstract class CommunicationAbstractions implements CommunicationInterfaces
+abstract class FirewallAbstractions implements FirewallInterfaces
 {
     
     /**
-     *
-     * @var mixed
-     */
-    protected $datas;
-    
-    /**
-     * Send something
+     * Handle exception or error
      * 
      * @return mixed
      */
-    public function send()
-    {
-        
-    }
-    
-    /**
-     * Receive something
-     * 
-     * @return mixed
-     */
-    public function receive()
+    public function handle()
     {
         
     }
