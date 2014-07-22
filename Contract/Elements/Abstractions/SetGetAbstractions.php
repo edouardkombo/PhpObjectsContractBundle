@@ -15,7 +15,7 @@
  */
 namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Abstractions;
 
-use EdouardKombo\PhpObjectsContract\Contract\Elements\Interfaces\SetGetInterfaces;
+use EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces\SetGetInterfaces;
 
 /**
  * Abstraction of SetGetInterfaces
