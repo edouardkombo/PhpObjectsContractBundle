@@ -26,7 +26,6 @@ namespace EdouardKombo\PhpObjectsContractBundle\Contract\Elements\Interfaces;
  */
 interface SetGetInterfaces
 {
-    
     /**
      * Set a value
      * 
@@ -39,5 +38,13 @@ interface SetGetInterfaces
      * 
      * @return mixed
      */
-    public function get();     
+    public function get();
+    
+    /**
+     * Easily assign a value to a property from external classes
+     * 
+     * @param string $property Class property
+     * @param string $value    Value to assign
+     */
+    public function setParameter($property, $value);     
 }

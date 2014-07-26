@@ -56,4 +56,20 @@ abstract class SetGetAbstractions implements SetGetInterfaces
     {
         return $this->{$this->cursor};         
     }
+    
+    /**
+     * Easily assign a value to a property from external classes
+     * 
+     * @param string $property Class property
+     * @param string $value    Value to assign
+     * 
+     * @return object
+     */
+    public function setParameter($property, $value)
+    {
+        $this->cursor = $property;
+        $this->set($value);
+        
+        return $this;
+    }     
 }
